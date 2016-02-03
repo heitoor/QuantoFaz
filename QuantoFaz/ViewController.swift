@@ -20,13 +20,13 @@ class ViewController: UIViewController {
     
     @IBAction func calcular(sender: UIButton) {
         
-        let pEtanol = Float(precoEtanol.text!)
-        let pGasolina = Float(precoGasolina.text!)
-        let cEtanol = Float(consumoEtanol.text!)
-        let cGasolina = Float(consumoGasolina.text!)
+        let pEtanol = Float(precoEtanol.text!) ?? 0.0
+        let pGasolina = Float(precoGasolina.text!) ?? 0.0
+        let cEtanol = Float(consumoEtanol.text!) ?? 0.0
+        let cGasolina = Float(consumoGasolina.text!) ?? 0.0
         
-        let gastoEtanol = pEtanol! / cEtanol!
-        let gastoGasolina = pGasolina! / cGasolina!
+        let gastoEtanol = pEtanol / cEtanol
+        let gastoGasolina = pGasolina / cGasolina
         
         if gastoEtanol > gastoGasolina {
             displayFinal.text = "O seu carro gasta R$ \(gastoGasolina) por KM com gasolina. \n E R$ \(gastoEtanol) com etanol. Portanto, utilize Gasolina."
