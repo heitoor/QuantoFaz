@@ -5,10 +5,10 @@
 //  Created by Heitor Augusto Pereira on 29/01/16.
 //  Copyright © 2016 Heitor Augusto Pereira. All rights reserved.
 //
-
+import GoogleMobileAds
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, GADBannerViewDelegate {
     
     @IBOutlet weak var precoEtanol: UITextField!
     @IBOutlet weak var precoGasolina: UITextField!
@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var displayFinal: UILabel!
     
     
+    @IBOutlet weak var bannerView: GADBannerView!
     
     @IBAction func calcular(sender: UIButton) {
         
@@ -43,6 +44,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        bannerView.adUnitID = "ca-app-pub-3915300212080226/7428676088"
+        bannerView.rootViewController = self
+        bannerView.loadRequest(GADRequest())
     }
 
 
