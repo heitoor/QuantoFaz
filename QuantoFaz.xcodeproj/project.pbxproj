@@ -13,6 +13,7 @@
 		365E4DA71C5BD43B005D9AAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365E4DA51C5BD43B005D9AAB /* Main.storyboard */; };
 		365E4DA91C5BD43B005D9AAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 365E4DA81C5BD43B005D9AAB /* Assets.xcassets */; };
 		365E4DAC1C5BD43B005D9AAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365E4DAA1C5BD43B005D9AAB /* LaunchScreen.storyboard */; };
+		365FC4B31C7B4A1B00CFBFD7 /* SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 365FC4B21C7B4A1B00CFBFD7 /* SplashScreen.png */; };
 		A8514ECC9F36202A04B50F93 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6CF93A83F554AF70241E7C0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		365E4DA81C5BD43B005D9AAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		365E4DAB1C5BD43B005D9AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		365E4DAD1C5BD43B005D9AAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		365FC4B21C7B4A1B00CFBFD7 /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen.png; sourceTree = "<group>"; };
 		786D6464959DE4C7869DAD16 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CA42BD1C7403674C2592FCEA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E6CF93A83F554AF70241E7C0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +77,7 @@
 				365E4DA11C5BD43B005D9AAB /* AppDelegate.swift */,
 				365E4DA31C5BD43B005D9AAB /* ViewController.swift */,
 				365E4DA51C5BD43B005D9AAB /* Main.storyboard */,
+				365FC4B21C7B4A1B00CFBFD7 /* SplashScreen.png */,
 				365E4DA81C5BD43B005D9AAB /* Assets.xcassets */,
 				365E4DAA1C5BD43B005D9AAB /* LaunchScreen.storyboard */,
 				365E4DAD1C5BD43B005D9AAB /* Info.plist */,
@@ -154,6 +157,7 @@
 			files = (
 				365E4DAC1C5BD43B005D9AAB /* LaunchScreen.storyboard in Resources */,
 				365E4DA91C5BD43B005D9AAB /* Assets.xcassets in Resources */,
+				365FC4B31C7B4A1B00CFBFD7 /* SplashScreen.png in Resources */,
 				3652D4EA1C774EB40029D2C2 /* Podfile in Resources */,
 				365E4DA71C5BD43B005D9AAB /* Main.storyboard in Resources */,
 			);
