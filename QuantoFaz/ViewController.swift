@@ -47,13 +47,13 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     
     func calculatesEverything() {
         
-        var pEtanol = Float(precoEtanol.text!) ?? 0
-        var pGasolina = Float(precoGasolina.text!) ?? 0
-        var cEtanol = Float(consumoEtanol.text!) ?? 0
-        var cGasolina = Float(consumoGasolina.text!) ?? 0
+        var pEtanol = (Float(precoEtanol.text!)) ?? 0.0
+        var pGasolina = (Float(precoGasolina.text!)) ?? 0.0
+        var cEtanol = (Float(consumoEtanol.text!)) ?? 0.0
+        var cGasolina = (Float(consumoGasolina.text!)) ?? 0.0
         
-        let gastoEtanol = pEtanol / cEtanol
-        let gastoGasolina = pGasolina / cGasolina
+        let gastoEtanol = Float(pEtanol / cEtanol)
+        let gastoGasolina = Float(pGasolina / cGasolina)
         
         if gastoEtanol > gastoGasolina {
             displayFinal.text = "O seu carro gasta R$ \(gastoGasolina) por KM com gasolina. \n E R$ \(gastoEtanol) com etanol. Portanto, utilize Gasolina."
@@ -63,15 +63,19 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         }
         if gastoEtanol == gastoGasolina {
             displayFinal.text = "O custo do seu carro é igual. Abasteça com o que preferir."
-        } /*else {
-            displayFinal.text = "Favor inserir os dados corretos."
-        }*/
+        }
+        if (pEtanol == 0) || (cEtanol == 0) {
+            displayFinal.text = "Seu carro gasta R$ \(gastoGasolina) por KM."
+        }
+        if (pGasolina == 0) || (cGasolina == 0) {
+            displayFinal.text = "Seu carro gasta R$ \(gastoEtanol) por KM."
+        }
         
         pEtanol = 0
         pGasolina = 0
         cEtanol = 0
         cGasolina = 0
-        
+    
         
     }
     
